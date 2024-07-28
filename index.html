@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Aerolínea SUPERVUELOS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="mainForm">
+      <h3>Aerolínea SUPERVUELOS</h3>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Número</th>
+          <th>Tipo</th>
+          <th>Costo</th>
+          <th>Pasajeros</th>
+          <th>Ingreso</th>
+        </tr>
+      </table>
+      <h5>Ingreso Total del día: Bs.<span id="mainForm_lblIngresoTotal">?</span></h5>
+      <h5>Menor Número de Pasajeros en un vuelo: <span id="mainForm_lblMenorNumPasajeros">?</span> pasajeros</h5>
+      <h5>Porcentaje de vuelos internacionales: <span id="mainForm_lblPorcInternacionales">?</span>%</h5>
+      <button id="mainForm_btAgregar">Agregar vuelo</button>
+    </section>
+
+    <section id="vueloForm">
+      <h3>Datos del vuelo</h3>
+      <input type="text" id="vueloForm_inNumero" placeholder="Número"></input>
+      <input type="text" id="vueloForm_inTipo" placeholder="Tipo"></input>
+      <input type="text" id="vueloForm_inCosto"  placeholder="Costo"></input>
+      <input type="text" id="vueloForm_inPasajeros" placeholder="Pasajeros"></input>
+      <button id="vueloForm_btAceptar">Aceptar</button> 
+    </section>
+  </body>
+  <script type="module">
+    import Cl_controlador from "./js/Cl_controlador.js";
+    new Cl_controlador()
+ </script>
+</html>
